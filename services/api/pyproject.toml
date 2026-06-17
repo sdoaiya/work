@@ -1,0 +1,17 @@
+[project]
+name = "ai-workdock-api"
+version = "0.1.0"
+description = "AI WorkDock MVP backend"
+requires-python = ">=3.11"
+dependencies = [
+  "fastapi>=0.115.0",
+  "httpx>=0.27.0",
+  "pydantic>=2.7.0",
+  "python-multipart>=0.0.9",
+  "pytest>=8.0.0",
+  "uvicorn>=0.30.0"
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
